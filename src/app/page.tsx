@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarStyleFullscreen from '@/components/navbar/NavbarStyleFullscreen/NavbarStyleFullscreen';
@@ -14,7 +14,7 @@ import { Award, Users, Utensils, Star, Instagram, Facebook, Phone } from 'lucide
 export default function LandingPage() {
   return (
     <ThemeProvider
-      defaultButtonVariant="bounce-effect"
+      defaultButtonVariant="text-stagger"
       defaultTextAnimation="background-highlight"
       borderRadius="soft"
       contentWidth="medium"
@@ -31,7 +31,7 @@ export default function LandingPage() {
             { name: "Home", id: "home" },
             { name: "Menu", id: "menu" },
             { name: "About", id: "about" },
-            { name: "Reviews", id: "reviews" },
+            { name: "Reviews", id: "testimonials" },
             { name: "Contact", id: "contact" }
           ]}
           brandName="Ejovik"
@@ -226,7 +226,6 @@ export default function LandingPage() {
             }
           ]}
           showRating={true}
-          gridVariant="uniform-all-items-equal"
           animationType="slide-up"
           containerStyle="default"
           textboxLayout="default"
